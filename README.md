@@ -1,5 +1,9 @@
 # IllusionDiffusion
 
+Want to make some exiciting illusion images like below, 
+![Alt text](https://github.com/beingmechon/IllusionDiffusion/blob/main/pattern.jpg)
+![Alt text](https://github.com/beingmechon/IllusionDiffusion/blob/main/docs/IlluDiffu.png)
+
 
 Use this repo by using the below commands:
 1. `git clone https://github.com/beingmechon/IllusionDiffusion.git`

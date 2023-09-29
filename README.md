@@ -1,6 +1,6 @@
 # IllusionDiffusion
 
-Committed from https://huggingface.co/spaces/AP123/IllusionDiffusion/tree/main
+Based on https://huggingface.co/spaces/AP123/IllusionDiffusion/tree/main
 
 Use this repo by using the below commands:
 1. `git clone https://github.com/beingmechon/IllusionDiffusion.git`

@@ -1,6 +1,6 @@
 # IllusionDiffusion
 
-Want to make some exiciting illusion images like below, 
+💫 Want to make some exiciting illusion images like below 👇🏼👇🏼
 <br />
 <br />
 ![pattern](https://github.com/beingmechon/IllusionDiffusion/assets/52150592/08cf88a7-2615-4a0d-9512-1d8d57334237)

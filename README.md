@@ -1,7 +1,7 @@
 # IllusionDiffusion
 
 Want to make some exiciting illusion images like below, 
-![IlluDiffu](https://github.com/beingmechon/IllusionDiffusion/assets/52150592/042cc0ac-311f-463d-a634-376daf2c60ec)
+![IlluDiffu](https://github.com/beingmechon/IllusionDiffusion/assets/52150592/cb72fdc1-7ac7-4b48-a023-a743bfbbc282)
 ![pattern](https://github.com/beingmechon/IllusionDiffusion/assets/52150592/08cf88a7-2615-4a0d-9512-1d8d57334237)
 
 

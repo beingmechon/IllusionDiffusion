@@ -1,4 +1,5 @@
 from helper import *
+from PIL import Image
 
 SAMPLER_MAP = {
     "DPM++ Karras SDE": lambda config: DPMSolverMultistepScheduler.from_config(config, use_karras=True, algorithm_type="sde-dpmsolver++"),

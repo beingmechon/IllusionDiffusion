@@ -12,4 +12,4 @@ Make use of this repo by running the below commands:
 2. `pip install -q -r requirements.txt`
 3. Run `main.py`
 
-Based on https://huggingface.co/spaces/AP123/IllusionDiffusion/tree/main
+Based on https://huggingface.co/spaces/AP123/IllusionDiffusion

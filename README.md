@@ -2,9 +2,8 @@
 
 Committed from https://huggingface.co/spaces/AP123/IllusionDiffusion/tree/main
 
-Use this repo by following the below steps:
-1. `pip install -q -r requirements.txt`
-2. Run `main.py`
+Use this repo by using the below commands:
+1. `git clone https://github.com/beingmechon/IllusionDiffusion.git`
+2. `pip install -q -r requirements.txt`
+3. Run `main.py`
 
-Note:
-If you're using CPU replace 'cuda' with 'cpu' in `main.py` file.

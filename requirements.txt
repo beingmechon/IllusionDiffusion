@@ -1,9 +1,11 @@
-diffusers 
-transformers 
-accelerate 
-xformers 
-Pillow 
-qrcode 
-filelock 
---extra-index-url https://download.pytorch.org/whl/cu118 
+diffusers
+transformers
+accelerate
+xformers
+gradio
+Pillow
+qrcode
+filelock
+https://gradio-builds.s3.amazonaws.com/52ceac5ecd12fa0990273dcb69c899abfb9c6a27/gradio-3.45.1-py3-none-any.whl
+--extra-index-url https://download.pytorch.org/whl/cu118
 torch

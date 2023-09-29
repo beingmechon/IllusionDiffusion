@@ -1,4 +1,5 @@
 from inference import inference
+from PIL import Image
 
 control_image_path = ""
 prompt = "Beautiful city"

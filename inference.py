@@ -1,5 +1,33 @@
 from helper import *
 from PIL import Image
+from diffusers import (
+    AutoencoderKL,
+    StableDiffusionControlNetPipeline,
+    ControlNetModel,
+    StableDiffusionControlNetImg2ImgPipeline,
+    DPMSolverMultistepScheduler,
+    EulerDiscreteScheduler
+)
+
+import time
+import random
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+BASE_MODEL = "SG161222/Realistic_Vision_V5.1_noVAE"
+
+vae = AutoencoderKL.from_pretrained("stabilityai/sd-vae-ft-mse", torch_dtype=torch.float32)
+controlnet = ControlNetModel.from_pretrained("monster-labs/control_v1p_sd15_qrcode_monster", torch_dtype=torch.float32)#, torch_dtype=torch.float32)
+main_pipe = StableDiffusionControlNetPipeline.from_pretrained(
+    BASE_MODEL,
+    controlnet=controlnet,
+    vae=vae,
+    safety_checker=None,
+    torch_dtype=torch.float32,
+).to(device)
+
+image_pipe = StableDiffusionControlNetImg2ImgPipeline(**main_pipe.components)
+
 
 SAMPLER_MAP = {
     "DPM++ Karras SDE": lambda config: DPMSolverMultistepScheduler.from_config(config, use_karras=True, algorithm_type="sde-dpmsolver++"),
@@ -18,6 +46,7 @@ def inference(
     seed: int = -1,
     sampler = "DPM++ Karras SDE"
 ):
+    check_inputs(control_image, prompt)
     start_time = time.time()
     start_time_struct = time.localtime(start_time)
     start_time_formatted = time.strftime("%H:%M:%S", start_time_struct)
@@ -32,7 +61,7 @@ def inference(
 
     main_pipe.scheduler = SAMPLER_MAP[sampler](main_pipe.scheduler.config)
     my_seed = random.randint(0, 2**32 - 1) if seed == -1 else seed
-    generator = torch.Generator(device="cuda").manual_seed(my_seed)
+    generator = torch.Generator(device=device).manual_seed(my_seed)
 
     out = main_pipe(
         prompt=prompt,

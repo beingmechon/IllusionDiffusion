@@ -1,5 +1,7 @@
 from PIL import Image
 import torch
+from gradio import processing_utils
+import gradio as gr
 
 def center_crop_resize(img, output_size=(512, 512)):
     width, height = img.size

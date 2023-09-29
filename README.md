@@ -1,8 +1,8 @@
 # IllusionDiffusion
 
 Want to make some exiciting illusion images like below, 
-![Alt text](https://github.com/beingmechon/IllusionDiffusion/blob/main/pattern.jpg)
-![Alt text](https://github.com/beingmechon/IllusionDiffusion/blob/main/docs/IlluDiffu.png)
+![IlluDiffu](https://github.com/beingmechon/IllusionDiffusion/assets/52150592/042cc0ac-311f-463d-a634-376daf2c60ec)
+![pattern](https://github.com/beingmechon/IllusionDiffusion/assets/52150592/08cf88a7-2615-4a0d-9512-1d8d57334237)
 
 
 Use this repo by using the below commands:
